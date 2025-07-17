@@ -146,7 +146,7 @@ const ProductView = ({ product, colors, onClose, addToCart }) => {
           {/* Share icons */}
           <div className="flex items-center space-x-4 text-gray-700 font-semibold">
             <span>Share :</span>
-            <a href="#" aria-label="Share on Facebook" className="hover:text-blue-600">
+            <a href="javascript:void(0)" aria-label="Share on Facebook" className="hover:text-blue-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -156,7 +156,7 @@ const ProductView = ({ product, colors, onClose, addToCart }) => {
                 <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54v-2.89h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z" />
               </svg>
             </a>
-            <a href="#" aria-label="Share on Twitter" className="hover:text-blue-400">
+            <a href="javascript:void(0)" aria-label="Share on Twitter" className="hover:text-blue-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -166,7 +166,7 @@ const ProductView = ({ product, colors, onClose, addToCart }) => {
                 <path d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
               </svg>
             </a>
-            <a href="#" aria-label="Share on Instagram" className="hover:text-pink-600">
+            <a href="javascript:void(0)" aria-label="Share on Instagram" className="hover:text-pink-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -176,7 +176,7 @@ const ProductView = ({ product, colors, onClose, addToCart }) => {
                 <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.5-3a1 1 0 110 2 1 1 0 010-2z" />
               </svg>
             </a>
-            <a href="#" aria-label="Share on LinkedIn" className="hover:text-blue-700">
+            <a href="javascript:void(0)" aria-label="Share on LinkedIn" className="hover:text-blue-700">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"

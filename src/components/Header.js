@@ -10,7 +10,6 @@ import {
 } from '@heroicons/react/24/outline';
 import Cart from './Cart';
 import SignupModal from './SignupModal'; // ✅ Add import
-import products from '../data/products.json';
 
 const categories = [
   'All Categories',
@@ -22,11 +21,11 @@ const categories = [
 ];
 
 const menuItems = [
-  { label: 'Popular', href: '#' },
-  { label: 'Shop', href: '#' },
-  { label: 'Contact', href: '#' },
-  { label: 'Pages', href: '#', submenu: ['About Us', 'FAQ', 'Terms'] },
-  { label: 'Blogs', href: '#', submenu: ['Blog List', 'Blog Single'] },
+  { label: 'Popular', href: 'javascript:void(0)' },
+  { label: 'Shop', href: 'javascript:void(0)' },
+  { label: 'Contact', href: 'javascript:void(0)' },
+  { label: 'Pages', href: 'javascript:void(0)', submenu: ['About Us', 'FAQ', 'Terms'] },
+  { label: 'Blogs', href: 'javascript:void(0)', submenu: ['Blog List', 'Blog Single'] },
 ];
 
 function Header({ cartItems, removeItem, onViewCart }) {
@@ -179,7 +178,7 @@ function Header({ cartItems, removeItem, onViewCart }) {
                   <ul className="ml-4 mt-1 space-y-1 text-gray-600">
                     {item.submenu.map((subitem) => (
                       <li key={subitem}>
-                        <a href="#" className="block py-1 hover:text-blue-600">{subitem}</a>
+                        <a href="javascript:void(0)" className="block py-1 hover:text-blue-600">{subitem}</a>
                       </li>
                     ))}
                   </ul>
@@ -213,7 +212,7 @@ function Header({ cartItems, removeItem, onViewCart }) {
                   <ul className="absolute left-0 top-full mt-1 bg-white border border-gray-200 rounded shadow-lg z-10 w-40">
                     {item.submenu.map((subitem) => (
                       <li key={subitem}>
-                        <a href="#" className="block px-4 py-2 hover:bg-gray-100 text-gray-700">
+                        <a href="javascript:void(0)" className="block px-4 py-2 hover:bg-gray-100 text-gray-700">
                           {subitem}
                         </a>
                       </li>
