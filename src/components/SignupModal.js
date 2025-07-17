@@ -108,9 +108,9 @@ const SignupModal = ({ isOpen, onClose }) => {
 
             {/* ✅ Social Icons */}
             <div className="flex justify-center space-x-6 mt-6 text-gray-700 text-xl">
-            <a href="javascript:void(0)" aria-label="Facebook" className="hover:text-red-600"><Facebook className="w-5 h-5" /></a>
-            <a href="javascript:void(0)" aria-label="Twitter" className="hover:text-red-600"><Twitter className="w-5 h-5" /></a>
-            <a href="javascript:void(0)" aria-label="Instagram" className="hover:text-red-600"><Instagram className="w-5 h-5" /></a>
+              <button type="button" aria-label="Facebook" className="hover:text-red-600"><Facebook className="w-5 h-5" /></button>
+              <button type="button" aria-label="Twitter" className="hover:text-red-600"><Twitter className="w-5 h-5" /></button>
+              <button type="button" aria-label="Instagram" className="hover:text-red-600"><Instagram className="w-5 h-5" /></button>
             </div>
 
             <div className="flex items-center justify-center mt-6 space-x-2 text-gray-600">

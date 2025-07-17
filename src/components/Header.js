@@ -195,11 +195,10 @@ function Header({ cartItems, removeItem, onViewCart }) {
           <ul className="flex space-x-6 py-3 text-sm font-semibold text-gray-900">
             {menuItems.map((item, index) => (
               <li key={item.label} className="relative group">
-                <a
-                  href={item.href}
-                  onClick={(e) => {
+                <button
+                  type="button"
+                  onClick={() => {
                     if (item.submenu) {
-                      e.preventDefault();
                       toggleSubmenu(index);
                     }
                   }}
@@ -207,14 +206,14 @@ function Header({ cartItems, removeItem, onViewCart }) {
                 >
                   {item.label}
                   {item.submenu && <ChevronDownIcon className="ml-1 h-4 w-4" />}
-                </a>
+                </button>
                 {item.submenu && submenuOpenIndex === index && (
                   <ul className="absolute left-0 top-full mt-1 bg-white border border-gray-200 rounded shadow-lg z-10 w-40">
                     {item.submenu.map((subitem) => (
                       <li key={subitem}>
-                        <a href="javascript:void(0)" className="block px-4 py-2 hover:bg-gray-100 text-gray-700">
+                        <button type="button" className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-gray-700">
                           {subitem}
-                        </a>
+                        </button>
                       </li>
                     ))}
                   </ul>
